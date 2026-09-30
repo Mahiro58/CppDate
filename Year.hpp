@@ -1,0 +1,4 @@
+
+struct Year{
+    int year;
+};

@@ -1,4 +1,11 @@
+#include <iostream>
 
-enum class Day{
-    monday = 1, tuesday, wednesday, thrustday, friday, saturday, sunday
+class Day{
+    public:
+        Day();
+        int getValue();
+
+    private:
+        int value;
+        bool isValid();
 };
