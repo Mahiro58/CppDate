@@ -1,6 +1,7 @@
 #include <iostream>
-#include "Day.h"
-#include "Month.h"
+#include "Day.hpp"
+#include "Month.hpp"
+#include "Date.hpp"
 
 int main()
 {

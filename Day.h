@@ -1,8 +1,0 @@
-
-
-class Day{
-    private:
-
-    public:
-
-};
