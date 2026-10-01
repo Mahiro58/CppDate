@@ -10,7 +10,7 @@ Month::Month(Type m)
     
 };
 
-int Month::getMaxDays(int year)
+int Month::getMaxDays(const Year& year)
 {
     switch (value)
     {
@@ -18,7 +18,7 @@ int Month::getMaxDays(int year)
         return 31;
         break;
     case 2:
-        if(year % 4 == 0){
+        if(year.year % 4 == 0){
             return 29;
             break;
         }

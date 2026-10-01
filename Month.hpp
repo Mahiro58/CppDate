@@ -1,6 +1,7 @@
 #ifndef MONTH_HPP
 #define MONTH_HPP
 
+#include "Year.hpp"
 #include <stdexcept>
 
 // this class store months in enums and checking for max days in a month.
@@ -13,7 +14,7 @@ class Month{
 
         };
         Month(Type m);
-        int getMaxDays(int year);
+        int getMaxDays(const Year& year);
         
     private:
         Type value;

@@ -1,4 +1,5 @@
-#include <iostream>
+#ifndef DAY_HPP
+#define DAY_HPP
 
 class Day{
     public:
@@ -9,3 +10,5 @@ class Day{
         int value;
         bool isValid();
 };
+
+#endif
