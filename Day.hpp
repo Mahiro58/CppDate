@@ -10,11 +10,11 @@
 class Day{
     public:
         Day(const Year& year, Month maxDays, int value);
+        Day(int dayNumber);
         int getValue();
 
     private:
         int value;
-        bool isValid();
         Month maxDays;
 };
 

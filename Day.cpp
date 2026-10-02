@@ -11,6 +11,10 @@ Day::Day(const Year& year, Month monthMaxDays, int value)
         throw std::invalid_argument("At least ode day is needed.");
     }
 };
+Day::Day(int dayNumber)
+{
+    value = 1;
+}
 
 int Day::getValue()
 {

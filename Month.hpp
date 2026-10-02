@@ -14,7 +14,10 @@ class Month{
 
         };
         Month(Type m);
+        Month(int monthNumber);
+        Month();
         int getMaxDays(const Year& year);
+        int getMonthVaue();
         
     private:
         Type value;
