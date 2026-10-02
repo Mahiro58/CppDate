@@ -14,5 +14,13 @@ int main()
     std::cout<<"Month: "<<m.getMonthVaue()<<std::endl;
     std::cout<<"Day: "<<d.getValue()<<std::endl;
 
+    y = 2030;
+    m = 12;
+    d = 35;
+
+    std::cout<<"Year: "<<y.getYearValue()<<std::endl;
+    std::cout<<"Month: "<<m.getMonthVaue()<<std::endl;
+    std::cout<<"Day: "<<d.getValue()<<std::endl;
+
     return 0;
 }

@@ -12,12 +12,18 @@ Month::Month(Type m)
 
 Month::Month(int monthNumber)
 {
-    value = static_cast<Type>(monthNumber);
+    if(monthNumber < 1 || monthNumber > 12){
+        throw std::invalid_argument("Month out of range.");
+    }
+    else{
+        value = static_cast<Type>(monthNumber);
+    }
+    
 }
 
 Month::Month()
 {
-    
+
 }
 
 int Month::getMaxDays(const Year& year)
