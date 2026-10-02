@@ -15,6 +15,11 @@ Month::Month(int monthNumber)
     value = static_cast<Type>(monthNumber);
 }
 
+Month::Month()
+{
+    
+}
+
 int Month::getMaxDays(const Year& year)
 {
     switch (value)
@@ -64,6 +69,7 @@ int Month::getMaxDays(const Year& year)
     
     default:
         std::cout<<"Month out of range."<<std::endl;
+        return -1;
         break;
     }
 }
